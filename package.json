@@ -1,0 +1,36 @@
+{
+  "name": "un5acttodolistapi",
+  "version": "1.0.0",
+  "description": "RestFul activity TODO list API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielAgueroKsquaregroup/Un5ActTodoListAPI.git"
+  },
+  "keywords": [
+    "Restful",
+    "API",
+    "TODO",
+    "List",
+    "JS"
+  ],
+  "author": "daniel aguero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielAgueroKsquaregroup/Un5ActTodoListAPI/issues"
+  },
+  "homepage": "https://github.com/DanielAgueroKsquaregroup/Un5ActTodoListAPI#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "pm2": "^5.1.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
