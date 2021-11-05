@@ -1,3 +1,3 @@
 const ListModel = require('./modelsApi');
 
-module.exports = { ListModel };
+module.exports = ListModel;

@@ -1,8 +1,8 @@
 const express = require('express');
 const ListResources = express.Router();
-const { ListController } = require('../controllers');
+const ListController = require('../controllers/index');
 
 ListResources.get('/', ListController.getAllNotes);
 ListResources.post('/', ListController.createNote);
 
-module.exports = { ListResources };
+module.exports = ListResources;

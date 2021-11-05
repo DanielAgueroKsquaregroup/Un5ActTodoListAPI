@@ -1,6 +1,6 @@
 // PUT THIS HERE
 const express = require('express');
-const { ListModel } = require('../models/index');
+const ListModel = require('../models/index');
 const app = express();
 
 const createNote = async (req, res) => {
@@ -20,7 +20,7 @@ const getAllNotes = async (req, res) => {
     try{
         res.send(notes);
     } catch(error) {
-        re.status(500).send(error);
+        res.status(500).send(error);
     }
 }
 

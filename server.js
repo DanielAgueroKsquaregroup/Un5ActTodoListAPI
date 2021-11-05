@@ -1,6 +1,6 @@
 const express  = require('express');
 const mongoose = require("mongoose");
-const routes = require('./api/routes/routesApi');
+const mainRoute = require('./api/routes/routesApi');
 // const routes = require('./api/resources');
 
 const app = express();
@@ -22,8 +22,8 @@ db.once("open", () => {
 });
 
 // Setting the server
-app.use(routes);
-app.get('/', (rep, res) => {
+app.use(mainRoute);
+app.get('/', (req, res) => {
     res.send(`Server's running`);
 });
 

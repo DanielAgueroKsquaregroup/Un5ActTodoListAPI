@@ -1,3 +1,3 @@
 const ListResources = require('./resourcesApi');
 
-module.exports = { ListResources };
+module.exports = ListResources;

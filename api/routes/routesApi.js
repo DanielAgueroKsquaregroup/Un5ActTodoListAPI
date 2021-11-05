@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { ListResources } = require('../resources');
+const ListResources = require('../resources');
 
-router.use('/notes', ListResources);
+router.use('/', ListResources);
 
 module.exports = router;
