@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // Creating the schema
 const schema = new mongoose.Schema({
-    text: {type: String, required: true},
+    text: {type: String, required: [true, 'Text is required']},
     date: { type: Date, default: Date.now }
 });
 
