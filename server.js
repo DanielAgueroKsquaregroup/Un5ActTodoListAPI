@@ -4,7 +4,7 @@ const mainRoute = require('./api/routes/routesApi');
 // const routes = require('./api/resources');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT||3000;
 const username = "daniel_Aguero";
 const password = "K$UKt7UW!$Pu2*m";
 const cluster = "cluster0.ed5jx";
